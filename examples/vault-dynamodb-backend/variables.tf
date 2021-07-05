@@ -77,3 +77,8 @@ variable "force_destroy_s3_bucket" {
   type        = bool
   default     = false
 }
+
+variable "enable_s3_bucket_versioning" {
+  description = "The name of the Dynamo Table to create and use as a storage backend. Only used if 'enable_dynamo_backend' is set to true."
+  default     = false
+}

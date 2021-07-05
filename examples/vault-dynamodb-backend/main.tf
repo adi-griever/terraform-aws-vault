@@ -40,6 +40,7 @@ module "vault_cluster" {
   enable_s3_backend       = true
   s3_bucket_name          = var.s3_bucket_name
   force_destroy_s3_bucket = var.force_destroy_s3_bucket
+  enable_s3_bucket_versioning = var.enable_s3_bucket_versioning
 
   vpc_id     = data.aws_vpc.default.id
   subnet_ids = data.aws_subnet_ids.default.ids
